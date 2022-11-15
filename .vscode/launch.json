@@ -1,0 +1,22 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "detection",
+            "type": "python",
+            "request": "launch",
+            "program": "${cwd}/object_detection/inference.py",
+            "args" : [
+                "--image_path", "./images/page.jpg",
+                "--output_file_name", "./images/page-0.6.jpg",
+                "--config", "./object_detection/publaynet_configs/maskrcnn/maskrcnn_dit_base.yaml",
+                "--score_threshold", "0.6",
+                "--opts", "MODEL.WEIGHTS", "https://layoutlm.blob.core.windows.net/dit/dit-fts/publaynet_dit-b_mrcnn.pth"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
