@@ -11,10 +11,10 @@
             "program": "${cwd}/object_detection/inference.py",
             "args" : [
                 "--image_path", "./images/page.jpg",
-                "--output_file_name", "./images/page-0.6.jpg",
+                "--output_file_name", "./images/page-0.8.jpg",
                 "--config", "./object_detection/publaynet_configs/maskrcnn/maskrcnn_dit_base.yaml",
-                "--score_threshold", "0.6",
-                "--opts", "MODEL.WEIGHTS", "https://layoutlm.blob.core.windows.net/dit/dit-fts/publaynet_dit-b_mrcnn.pth"
+                "--score_threshold", "0.8",
+                "--opts", "MODEL.WEIGHTS", "./object_detection/publaynet/publaynet_dit-b_mrcnn.pth"
             ],
             "console": "integratedTerminal"
         }

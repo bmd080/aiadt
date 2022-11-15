@@ -12,3 +12,4 @@ tensorboardX
 deepspeed==0.4.0
 scipy
 opencv-python
+pdf2image
